@@ -66,7 +66,7 @@ plt.show()
 # Average Quality of Sleep by Occupation
 avg_quality_by_occupation = data.groupby('Occupation')['Quality of Sleep'].mean().sort_values()
 plt.figure(figsize=(12, 6))
-bar_plot = sns.barplot(x=avg_quality_by_occupation.index, y=avg_quality_by_occupation.values, palette='winter')
+bar_plot = sns.barplot(x=avg_quality_by_occupation.index, y=avg_quality_by_occupation.values, palette='autumn')
 bar_plot.bar_label(bar_plot.containers[0])
 plt.xticks(rotation=45)
 plt.title('Average Quality of Sleep by Occupation')

@@ -10,3 +10,15 @@ for i in col:
 
 missing_values = data.isnull().sum()
 print(missing_values)
+
+
+
+#REPLACING NONE VALUES BY NO
+
+data['Sleep Disorder'] = data['Sleep Disorder'].fillna('No')
+
+
+#CHECK AGAIN THE MISSING VALS
+
+missing_values = data.isnull().sum()
+print(missing_values)
